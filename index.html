@@ -1,1 +1,209 @@
-"MangAI" 
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #33658aff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        -webkit-box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.34);
+        box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.34);
+      }
+
+      footer {
+        background-color: #33658aff;
+      }
+
+      footer > .disclaimer {
+        color: white;
+      }
+
+      header > img {
+        width: 75px;
+        height: fit-content;
+        margin: 5px 20px;
+      }
+
+      h1,
+      h2 {
+        font-family: "Roboto", sans-serif;
+        margin-top: 25px;
+      }
+
+      p,
+      li {
+        font-family: "Roboto", sans-serif;
+        margin-top: 5px;
+      }
+
+      .disclaimer {
+        font-size: 13px;
+        margin: 0;
+        padding: 10px;
+        margin-top: 20px;
+      }
+
+      .site-title {
+        color: #86bbd8ff;
+        margin: 0;
+      }
+
+      main {
+        max-width: 720px;
+        margin: auto;
+        margin-top: 100px;
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        padding-top: 0px;
+        box-sizing: border-box;
+      }
+
+      .example {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .example-image {
+        width: 300px;
+        height: min-content;
+      }
+
+      .columns {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./avatar.png" alt="site avatar" />
+      <h1 class="site-title">MangAI</h1>
+    </header>
+    <main>
+      <h1 style="padding-top: 10px">Welcome to MangAI</h1>
+      <p>
+        MangAI uses advanced AI technology to colorize all your favorite black
+        and white manga and hentai!
+      </p>
+      <div class="example">
+        <img
+          class="example-image"
+          src="example-1-before.jpeg"
+          alt="example image before"
+        />
+        <i class="fa fa-arrow-right fa-3x"></i>
+        <img
+          class="example-image"
+          src="example-1-after.jpeg"
+          alt="example image after"
+        />
+      </div>
+      <div>
+        <h2>How to Use</h2>
+        <ul>
+          <li>Download the extension on the chrome web store</li>
+          <li>
+            Navigate to one of our
+            <a href="#supported-websites">supported websites</a>
+          </li>
+          <li>Turn on the colorize feature within the extension</li>
+          <li>Read away!</li>
+        </ul>
+        <p class="disclaimer">
+          The app is currently running in closed alpha. Changes will be made as
+          we learn from our users. If you would like access to the closed alpha,
+          please join our
+          <a href="https://discord.gg/mQT3s9BcpR">public discord</a>.
+        </p>
+      </div>
+
+      <div id="supported-websites">
+        <h2>Supported websites</h2>
+        <div class="columns">
+          <div style="flex: 1">
+            <p>For free, we work on:</p>
+            <ul>
+              <li>
+                <a href="https://mangakakalot.com" target="_blank"
+                  >mangakakalot.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.mangago.me" target="_blank">mangago.me</a>
+              </li>
+              <li><a href="https://bato.to" target="_blank">bato.to</a></li>
+              <li>
+                <a href="https://mangapark.net" target="_blank"
+                  >mangapark.net</a
+                >
+              </li>
+              <li>
+                <a href="http://kissmanga.nl" target="_blank">kissmanga.nl</a>
+              </li>
+            </ul>
+          </div>
+          <div style="flex: 1">
+            <p>Premium users can use these sites:</p>
+            <ul>
+              <li>
+                <a href="https://mangaowl.net" target="_blank">mangaowl.net</a>
+              </li>
+              <li>
+                <a href="https://nhentai.net" target="_blank">nhentai.net</a>
+              </li>
+              <li>
+                <a href="https://e-hentai.org" target="_blank">e-hentai.org</a>
+              </li>
+              <li>
+                <a href="https://hentai2read.com" target="_blank"
+                  >hentai2read.com</a
+                >
+              </li>
+              <li>
+                <a href="https://hentaifox.com" target="_blank"
+                  >hentaifox.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.simply-hentai.com/start" target="_blank"
+                  >simply-hentai.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="disclaimer">Copyright © 2021 MangAI, all rights reserved.</p>
+    </footer>
+  </body>
+</html>
